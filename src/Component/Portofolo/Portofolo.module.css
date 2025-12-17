@@ -1,0 +1,21 @@
+.ilayr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #1abc9c98;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 0.5s ease-in-out;
+}
+
+.iconn {
+  cursor: pointer;
+  font-size: 80px !important;
+}
+
+.ilayr:hover {
+  opacity: 1;
+  transform: translateY(0);
+}

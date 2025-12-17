@@ -1,0 +1,77 @@
+.floatinginput {
+  position: relative;
+  width: 100%;
+}
+
+.floatinginput input {
+  width: 100%;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 18px;
+}
+
+.floatinginput label {
+  position: absolute;
+  left: 10px;
+  bottom: 25px;
+  color: #777;
+  pointer-events: none;
+  transition: 0.3s ease;
+  font-size: 18px;
+}
+
+.floatinginput input:not(:placeholder-shown) + label {
+  bottom: 75px;
+  font-size: 14px;
+  color: #198754;
+}
+
+@media (max-width: 500px) {
+  .floatinginput label {
+    bottom: 25px;
+    font-size: 16px;
+  }
+
+  .floatinginput input:not(:placeholder-shown) + label {
+    bottom: 75px;
+    font-size: 12px;
+  }
+
+  .floatinginput input {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+}
+
+.Contact {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .Contact {
+    padding-top: 120px;
+  }
+}
+
+p {
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: 100% !important;
+  }
+}
+
+/* 
+.pfooter{
+  margin: 0 !important;
+} */

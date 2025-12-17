@@ -27,9 +27,10 @@ export default function MyNavbar() {
         className={`navbar navbar-expand-lg fixed-top ${navClass} ${styles.navbar}`}
       >
         <div className="container-fluid">
-          <navLink className={`${styles.brand}`} to={"/"}>
-            Start Framework
-          </navLink>
+        <Link className={`${styles.brand}`} to="/">
+  Start Framework
+</Link>
+
 
           <button
             className={`navbar-toggler ${styles.toggler}`}
